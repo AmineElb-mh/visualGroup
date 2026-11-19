@@ -1,5 +1,7 @@
 {
-  "description": "Creates a prototype that preserves the original design, helping users explore and validate an interface without changing its visual style.",
+  "title": "Visual Group Teasers – De Telegraaf prototype",
+  "description": "Prototype van de responsive homepage met visual group teasers en visual feed.",
+  "language": "nl",
   "robots": {
     "index": false
   },
