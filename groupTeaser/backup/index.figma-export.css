@@ -1,0 +1,226 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Noto Serif:Regular";
+  src: url("/fonts/Noto_Serif-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto:Black";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Roboto:Bold";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto:Medium";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto:Regular";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Pro Text:Bold";
+  src: url("/fonts/SF_Pro_Text-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SF Pro Text:Medium";
+  src: url("/fonts/SF_Pro_Text-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF Pro Text:Regular";
+  src: url("/fonts/SF_Pro_Text-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@layer base {
+  html {
+    background: white;
+  }
+
+  body {
+    min-width: 320px;
+    min-height: 100dvh;
+    overflow-x: auto;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  [data-node-id="1:4578"],
+  [data-node-id="1:4579"],
+  [data-node-id="1:4585"] {
+    scrollbar-width: none;
+  }
+
+  [data-node-id="1:4578"]::-webkit-scrollbar,
+  [data-node-id="1:4579"]::-webkit-scrollbar,
+  [data-node-id="1:4585"]::-webkit-scrollbar {
+    display: none;
+  }
+
+  [data-node-id="1:4579"],
+  [data-node-id="1:4585"] {
+    scroll-behavior: smooth;
+    scroll-snap-type: inline mandatory;
+  }
+
+  [data-node-id="1:4579"] > *,
+  [data-node-id="1:4585"] > * {
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 1439px) {
+  [data-node-id="1:4565"] {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  [data-node-id="1:4565"] > *,
+  [class*="w-[1440px]"],
+  [class*="w-[1280px]"],
+  [class*="w-[1248px]"] {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  [data-node-id="1:4566"] > div > div,
+  [data-node-id="I1:4566;1:1449;35:2051"] {
+    padding-inline: 16px;
+  }
+
+  [data-node-id="1:4567"],
+  [data-node-id="1:4568"] {
+    width: calc(100% - 32px) !important;
+  }
+
+  [data-node-id="1:4575"] {
+    min-width: 0;
+  }
+
+  [data-node-id="1:4576"],
+  [data-node-id="1:4578"],
+  [data-node-id="1:4579"] {
+    width: calc(100% - 32px) !important;
+  }
+
+  [data-node-id="1:4578"] {
+    overflow-x: auto;
+  }
+
+  [data-node-id="1:4579"] {
+    padding-right: 0;
+  }
+
+  [data-node-id="1:4474"] {
+    padding-inline: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  [data-node-id="I1:4566;1:1445"],
+  [data-node-id="I1:4566;1:1449;1:1534"] {
+    display: none;
+  }
+
+  [data-node-id="I1:4566;1:1449;35:2051"] {
+    justify-content: center;
+  }
+
+  [data-node-id="1:4565"] {
+    gap: 24px;
+  }
+
+  [data-node-id="1:4567"],
+  [data-node-id="1:4568"] {
+    width: calc(100% - 24px) !important;
+  }
+
+  [data-node-id="1:4568"] {
+    flex-direction: column;
+  }
+
+  [data-node-id="1:4575"] {
+    height: auto;
+  }
+
+  [data-node-id="1:4576"],
+  [data-node-id="1:4578"],
+  [data-node-id="1:4579"] {
+    width: calc(100% - 24px) !important;
+  }
+
+  [data-node-id="1:4579"],
+  [data-node-id="1:4585"] {
+    height: min(132vw, 500px);
+  }
+
+  [data-node-id="1:4571"],
+  [data-node-id="1:4851"] {
+    padding-right: 12px;
+  }
+
+  .story-teaser,
+  [data-node-id="1:4579"] > [data-name^="teaser"],
+  [data-node-id="1:4585"] > [data-name^="teaser"] {
+    width: min(82vw, 300px);
+  }
+
+  [data-node-id="1:4474"] {
+    gap: 32px;
+    padding: 32px 20px 24px;
+  }
+
+  [data-node-id="1:4477"] {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+@keyframes teaser-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+[class*="animate-[teaser-in"] > a {
+  animation-delay: var(--delay, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [class*="animate-[teaser-in"] > a {
+    animation: none;
+  }
+}

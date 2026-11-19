@@ -1,0 +1,10 @@
+{
+  "description": "Explore a visual feed prototype that presents engaging content in an easy-to-browse format for inspiration and discovery.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

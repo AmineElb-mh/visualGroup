@@ -1,0 +1,10 @@
+{
+  "description": "Creates a prototype that preserves the original design, helping users explore and validate an interface without changing its visual style.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

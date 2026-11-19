@@ -1,0 +1,11 @@
+{
+  "name": "prototype-group-teasers",
+  "private": true,
+  "scripts": {
+    "setup": "npm --prefix groupTeaser install && npm --prefix \"Visual Feed Prototype\" install",
+    "dev": "npm --prefix groupTeaser run dev",
+    "build": "npm --prefix groupTeaser run build",
+    "preview": "npm --prefix groupTeaser run preview",
+    "dev:feed": "npm --prefix \"Visual Feed Prototype\" run dev"
+  }
+}

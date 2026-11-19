@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* One variable Roboto family for the page; the per-weight Figma families
+   below are still used by the StoryBlock. */
+@font-face {
+  font-family: "Roboto";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Serif:Regular";
+  src: url("/fonts/Noto_Serif-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto:Black";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Roboto:Bold";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto:Medium";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto:Regular";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Pro Text:Bold";
+  src: url("/fonts/SF_Pro_Text-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SF Pro Text:Medium";
+  src: url("/fonts/SF_Pro_Text-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF Pro Text:Regular";
+  src: url("/fonts/SF_Pro_Text-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@layer base {
+  html {
+    background: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    min-width: 320px;
+    min-height: 100dvh;
+    font-variation-settings: "wdth" 100;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+@keyframes teaser-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+[class*="animate-[teaser-in"] > a {
+  animation-delay: var(--delay, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [class*="animate-[teaser-in"] > a {
+    animation: none;
+  }
+}
